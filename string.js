@@ -1,6 +1,8 @@
 // Write a function to split a string into chunks of a given length
 // Example :
 // splitString("abcde", 2) -> ["ab", "cd", "e"]
+// splitString("abcdef", 2) -> ["ab", "cd", "ef"]
+// splitString("abcdef", 3) -> ["abc", "def"]
 
 let string1 =
   "It is a trust that collects money from a number of investors who share a common investment objective and invests the same in equities, bonds, money market instruments and/or other securities. And the income / gains generated from this collective investment is distributed proportionately amongst the investors after deducting applicable expenses and levies, by calculating a scheme’s “Net Asset Value” or NAV. Simply put, the money pooled in by a large number of investors is what makes up a Mutual Fund.";
@@ -39,3 +41,4 @@ const spliter2 = (str) => {
 };
 
 console.log(spliter2(string1));
+// Need more optimization in this
