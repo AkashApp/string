@@ -52,4 +52,12 @@ str.includes("ell"); // true
 str.indexOf("l"); // 2
 str.substring(1, 4); // "ell"
 
+function charFrequency(str) {
+  const freq = {};
+  for (let ch of str) {
+    freq[ch] = (freq[ch] || 0) + 1;
+  }
+  return freq;
+}
 
+console.log(charFrequency(str));
