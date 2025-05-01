@@ -42,3 +42,14 @@ const spliter2 = (str) => {
 
 console.log(spliter2(string1));
 // Need more optimization in this
+
+
+let str = "hello";
+str.length; // 5
+str[0];     // 'h'
+str.toUpperCase(); // "HELLO"
+str.includes("ell"); // true
+str.indexOf("l"); // 2
+str.substring(1, 4); // "ell"
+
+
