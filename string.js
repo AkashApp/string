@@ -88,3 +88,17 @@ function longestUniqueSubstring(str) {
 
 console.log(longestUniqueSubstring(str));
 
+function isAnagram(a, b) {
+  if (a.length !== b.length) return false;
+  const count = {};
+  for (let ch of a) count[ch] = (count[ch] || 0) + 1;
+  for (let ch of b) {
+    if (!count[ch]) return false;
+    count[ch]--;
+  }
+  return true;
+}
+
+console.log(isAnagram(str, "olleh"));
+
+
