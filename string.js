@@ -101,4 +101,14 @@ function isAnagram(a, b) {
 
 console.log(isAnagram(str, "olleh"));
 
+// truncate a string
+// truncateString("abcdef", 4) -> "abcd..."
+// truncateString("abcdef", 3) -> "abc..."
+// truncateString("abcdef", 2) -> "ab..."
+
+function truncateString(str, num) {
+  if (str.length <= num) return str;
+  return str.slice(0, num) + "...";
+}
+console.log(truncateString("akash borate", 5));
 
