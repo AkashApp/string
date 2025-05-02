@@ -88,7 +88,15 @@ function longestUniqueSubstring(str) {
 
 console.log(longestUniqueSubstring(str));
 
+
 function isAnagram(a, b) {
+  a = a.split("").sort().join("");
+  b = b.split("").sort().join("");
+  return a === b;
+}
+console.log(isAnagram(str, "olleh"));
+
+function isAnagram2(a, b) {
   if (a.length !== b.length) return false;
   const count = {};
   for (let ch of a) count[ch] = (count[ch] || 0) + 1;
@@ -99,7 +107,7 @@ function isAnagram(a, b) {
   return true;
 }
 
-console.log(isAnagram(str, "olleh"));
+console.log(isAnagram2(str, "olleh"));
 
 // truncate a string
 // truncateString("abcdef", 4) -> "abcd..."
