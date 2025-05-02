@@ -112,3 +112,18 @@ function truncateString(str, num) {
 }
 console.log(truncateString("akash borate", 5));
 
+
+// Hamming distance
+
+const hammingDistance = (x,y) => {
+  if(x.length !== y.length) return -1;
+  let distance =0;
+  for(let i=0; i<x.length; i++){
+    if(x[i] !== y[i]){
+      distance++;
+    }
+  }
+  return distance;
+}
+
+console.log(hammingDistance("abcde", "bcdef"));
