@@ -26,7 +26,7 @@ const spliter = (str) => {
   return ans;
 };
 
-console.log(spliter(string1));
+// console.log(spliter(string1));
 
 const spliter2 = (str) => {
   const ans = [];
@@ -40,7 +40,7 @@ const spliter2 = (str) => {
   return ans;
 };
 
-console.log(spliter2(string1));
+// console.log(spliter2(string1));
 // Need more optimization in this
 
 
@@ -60,7 +60,7 @@ function charFrequency(str) {
   return freq;
 }
 
-console.log(charFrequency(str));
+// console.log(charFrequency(str));
 
 function isPalindrome(str) {
   let left = 0, right = str.length - 1;
@@ -70,7 +70,7 @@ function isPalindrome(str) {
   return true;
 }
 
-console.log(isPalindrome(str));
+// console.log(isPalindrome(str));
 
 
 function longestUniqueSubstring(str) {
@@ -86,7 +86,7 @@ function longestUniqueSubstring(str) {
   return maxLen;
 }
 
-console.log(longestUniqueSubstring(str));
+// console.log(longestUniqueSubstring(str));
 
 
 function isAnagram(a, b) {
@@ -94,7 +94,7 @@ function isAnagram(a, b) {
   b = b.split("").sort().join("");
   return a === b;
 }
-console.log(isAnagram(str, "olleh"));
+// console.log(isAnagram(str, "olleh"));
 
 function isAnagram2(a, b) {
   if (a.length !== b.length) return false;
@@ -107,7 +107,7 @@ function isAnagram2(a, b) {
   return true;
 }
 
-console.log(isAnagram2(str, "olleh"));
+// console.log(isAnagram2(str, "olleh"));
 
 // truncate a string
 // truncateString("abcdef", 4) -> "abcd..."
@@ -118,7 +118,7 @@ function truncateString(str, num) {
   if (str.length <= num) return str;
   return str.slice(0, num) + "...";
 }
-console.log(truncateString("akash borate", 5));
+// console.log(truncateString("akash borate", 5));
 
 
 // Hamming distance
@@ -134,4 +134,6 @@ const hammingDistance = (x,y) => {
   return distance;
 }
 
-console.log(hammingDistance("abcde", "bcdef"));
+// console.log(hammingDistance("abcde", "bcdef"));
+
+
